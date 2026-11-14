@@ -67,7 +67,7 @@ export default function ReviewSection({ parkingId, currentRating = 4.5, totalRev
         <form
           onSubmit={handleSubmit}
           style={{
-            background: 'rgba(255, 255, 255, 0.03)',
+            background: 'var(--bg-control)',
             border: '1px solid var(--border-subtle)',
             borderRadius: '12px',
             padding: '20px',
@@ -135,7 +135,7 @@ export default function ReviewSection({ parkingId, currentRating = 4.5, totalRev
             <div
               key={r._id}
               style={{
-                background: 'rgba(255, 255, 255, 0.02)',
+                background: 'var(--bg-inset)',
                 border: '1px solid var(--border-subtle)',
                 borderRadius: '10px',
                 padding: '16px',
@@ -155,7 +155,7 @@ export default function ReviewSection({ parkingId, currentRating = 4.5, totalRev
                 </div>
               </div>
 
-              <p style={{ fontSize: '14px', color: '#cbd5e1', margin: '4px 0 8px' }}>{r.comment}</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-secondary)', margin: '4px 0 8px' }}>{r.comment}</p>
               <div className="row between small muted">
                 <span>Parked: {r.vehicleType || 'CAR'}</span>
                 <span>{when(r.createdAt)}</span>

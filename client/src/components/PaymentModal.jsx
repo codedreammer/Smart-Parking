@@ -59,7 +59,7 @@ export default function PaymentModal({ booking, onClose, onSuccess }) {
 
             {/* Bill Preview */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.03)',
+              background: 'var(--bg-control)',
               border: '1px solid var(--border-subtle)',
               borderRadius: '12px',
               padding: '16px',
@@ -99,7 +99,7 @@ export default function PaymentModal({ booking, onClose, onSuccess }) {
                     padding: '10px',
                     borderRadius: '8px',
                     border: `1px solid ${method === m.id ? 'var(--accent-cyan)' : 'var(--border-subtle)'}`,
-                    background: method === m.id ? 'rgba(6, 182, 212, 0.15)' : 'rgba(255, 255, 255, 0.02)',
+                    background: method === m.id ? 'rgba(6, 182, 212, 0.15)' : 'var(--bg-inset)',
                     color: method === m.id ? '#fff' : '#94a3b8',
                     fontWeight: 600,
                     fontSize: '13px',

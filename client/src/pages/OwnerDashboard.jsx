@@ -238,7 +238,7 @@ export default function OwnerDashboard() {
             </span>
             <div style={{ display: 'grid', gap: '8px' }}>
               {VEH.map((v) => (
-                <div key={v} className="between" style={{ background: 'rgba(255,255,255,0.02)', padding: '8px 12px', borderRadius: '8px' }}>
+                <div key={v} className="between" style={{ background: 'var(--bg-inset)', padding: '8px 12px', borderRadius: '8px' }}>
                   <label style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: 0, cursor: 'pointer' }}>
                     <input
                       type="checkbox"

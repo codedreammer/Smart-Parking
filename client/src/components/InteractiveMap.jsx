@@ -97,7 +97,7 @@ export default function InteractiveMap({ items = [], onSelectParking, selectedId
               bottom: '16px',
               left: '16px',
               right: '16px',
-              background: 'rgba(15, 23, 42, 0.95)',
+              background: 'var(--bg-glass)',
               border: '1px solid rgba(6, 182, 212, 0.3)',
               borderRadius: '12px',
               padding: '14px',

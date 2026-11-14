@@ -73,22 +73,22 @@ export default function DigitalTicketModal({ booking, onClose, onCheckIn, onChec
           <div style={{ padding: '24px' }}>
             {/* Quick Metrics */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', textAlign: 'center', marginBottom: '20px' }}>
-              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '10px', borderRadius: '8px' }}>
+              <div style={{ background: 'var(--bg-control)', padding: '10px', borderRadius: '8px' }}>
                 <span className="muted small" style={{ display: 'block' }}>BAY</span>
                 <strong className="mono" style={{ color: '#fbbf24', fontSize: '16px' }}>{booking.slotNumber || 'A-01'}</strong>
               </div>
-              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '10px', borderRadius: '8px' }}>
+              <div style={{ background: 'var(--bg-control)', padding: '10px', borderRadius: '8px' }}>
                 <span className="muted small" style={{ display: 'block' }}>GATE PIN</span>
                 <strong className="mono ok" style={{ fontSize: '16px' }}>{booking.gatePin || '5821'}</strong>
               </div>
-              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '10px', borderRadius: '8px' }}>
+              <div style={{ background: 'var(--bg-control)', padding: '10px', borderRadius: '8px' }}>
                 <span className="muted small" style={{ display: 'block' }}>VEHICLE</span>
                 <strong className="mono" style={{ fontSize: '13px', color: '#fff' }}>{booking.vehicleNumber}</strong>
               </div>
             </div>
 
             {/* Timings */}
-            <div style={{ background: 'rgba(255,255,255,0.02)', padding: '12px', borderRadius: '8px', fontSize: '13px', marginBottom: '16px' }}>
+            <div style={{ background: 'var(--bg-inset)', padding: '12px', borderRadius: '8px', fontSize: '13px', marginBottom: '16px' }}>
               <div className="between" style={{ marginBottom: '4px' }}>
                 <span className="muted">Valid From</span>
                 <span className="mono">{when(booking.startTime)}</span>
@@ -104,34 +104,34 @@ export default function DigitalTicketModal({ booking, onClose, onCheckIn, onChec
               <div className="qr-code-box">
                 <svg width="150" height="150" viewBox="0 0 100 100">
                   {/* Outer corner finders */}
-                  <rect x="5" y="5" width="26" height="26" fill="#080c15" />
+                  <rect x="5" y="5" width="26" height="26" fill="currentColor" />
                   <rect x="9" y="9" width="18" height="18" fill="#fff" />
-                  <rect x="13" y="13" width="10" height="10" fill="#080c15" />
+                  <rect x="13" y="13" width="10" height="10" fill="currentColor" />
 
-                  <rect x="69" y="5" width="26" height="26" fill="#080c15" />
+                  <rect x="69" y="5" width="26" height="26" fill="currentColor" />
                   <rect x="73" y="9" width="18" height="18" fill="#fff" />
-                  <rect x="77" y="13" width="10" height="10" fill="#080c15" />
+                  <rect x="77" y="13" width="10" height="10" fill="currentColor" />
 
-                  <rect x="5" y="69" width="26" height="26" fill="#080c15" />
+                  <rect x="5" y="69" width="26" height="26" fill="currentColor" />
                   <rect x="9" y="73" width="18" height="18" fill="#fff" />
-                  <rect x="13" y="77" width="10" height="10" fill="#080c15" />
+                  <rect x="13" y="77" width="10" height="10" fill="currentColor" />
 
                   {/* QR Pattern dots */}
-                  <rect x="36" y="8" width="6" height="6" fill="#080c15" />
-                  <rect x="46" y="14" width="6" height="6" fill="#080c15" />
-                  <rect x="56" y="8" width="6" height="6" fill="#080c15" />
-                  <rect x="36" y="24" width="6" height="6" fill="#080c15" />
-                  <rect x="12" y="38" width="6" height="6" fill="#080c15" />
-                  <rect x="24" y="44" width="6" height="6" fill="#080c15" />
-                  <rect x="36" y="40" width="12" height="12" fill="#080c15" />
-                  <rect x="54" y="44" width="6" height="6" fill="#080c15" />
-                  <rect x="66" y="38" width="6" height="6" fill="#080c15" />
-                  <rect x="80" y="44" width="6" height="6" fill="#080c15" />
-                  <rect x="40" y="62" width="6" height="6" fill="#080c15" />
-                  <rect x="52" y="70" width="6" height="6" fill="#080c15" />
-                  <rect x="64" y="62" width="6" height="6" fill="#080c15" />
-                  <rect x="76" y="74" width="6" height="6" fill="#080c15" />
-                  <rect x="88" y="82" width="6" height="6" fill="#080c15" />
+                  <rect x="36" y="8" width="6" height="6" fill="currentColor" />
+                  <rect x="46" y="14" width="6" height="6" fill="currentColor" />
+                  <rect x="56" y="8" width="6" height="6" fill="currentColor" />
+                  <rect x="36" y="24" width="6" height="6" fill="currentColor" />
+                  <rect x="12" y="38" width="6" height="6" fill="currentColor" />
+                  <rect x="24" y="44" width="6" height="6" fill="currentColor" />
+                  <rect x="36" y="40" width="12" height="12" fill="currentColor" />
+                  <rect x="54" y="44" width="6" height="6" fill="currentColor" />
+                  <rect x="66" y="38" width="6" height="6" fill="currentColor" />
+                  <rect x="80" y="44" width="6" height="6" fill="currentColor" />
+                  <rect x="40" y="62" width="6" height="6" fill="currentColor" />
+                  <rect x="52" y="70" width="6" height="6" fill="currentColor" />
+                  <rect x="64" y="62" width="6" height="6" fill="currentColor" />
+                  <rect x="76" y="74" width="6" height="6" fill="currentColor" />
+                  <rect x="88" y="82" width="6" height="6" fill="currentColor" />
                 </svg>
               </div>
               <p className="small muted" style={{ marginTop: '8px' }}>

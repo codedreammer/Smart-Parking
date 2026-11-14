@@ -131,7 +131,7 @@ export default function ParkingDetails() {
           borderRadius: '16px',
           overflow: 'hidden',
           boxShadow: 'var(--shadow-card)',
-          background: '#000',
+          background: 'var(--bg-surface)',
         }}>
           <img
             src={images[activeImageIdx]}
@@ -141,7 +141,7 @@ export default function ParkingDetails() {
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(to top, rgba(8, 12, 21, 0.95) 0%, rgba(8, 12, 21, 0.2) 60%, transparent 100%)',
+            background: 'linear-gradient(to top, rgba(18, 29, 46, 0.95) 0%, rgba(18, 29, 46, 0.2) 60%, transparent 100%)',
           }}></div>
 
           <div style={{ position: 'absolute', bottom: '24px', left: '28px', right: '28px' }} className="between">
@@ -189,7 +189,7 @@ export default function ParkingDetails() {
         <div>
           <div className="card" style={{ marginBottom: '24px' }}>
             <h2 style={{ fontSize: '20px', marginBottom: '12px' }}>About This Facility</h2>
-            <p style={{ color: '#cbd5e1', lineHeight: '1.7', marginBottom: '20px' }}>
+            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '20px' }}>
               {p.description || 'Modern automated smart parking facility equipped with high-speed boom barriers, CCTV surveillance, and designated EV charging stations.'}
             </p>
 
@@ -314,7 +314,7 @@ export default function ParkingDetails() {
 
           {/* Selected Bay Confirmation */}
           <div style={{
-            background: 'rgba(255, 255, 255, 0.03)',
+            background: 'var(--bg-inset)',
             borderRadius: '8px',
             padding: '10px 14px',
             margin: '14px 0',
@@ -328,7 +328,7 @@ export default function ParkingDetails() {
 
           {/* Price Calculation Bill */}
           <div style={{
-            background: 'rgba(15, 23, 42, 0.8)',
+            background: 'var(--bg-inset)',
             border: '1px solid var(--border-subtle)',
             borderRadius: '10px',
             padding: '14px',

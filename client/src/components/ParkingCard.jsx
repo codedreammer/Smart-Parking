@@ -17,7 +17,7 @@ export default function ParkingCard({ p }) {
             <span className="pulse-dot"></span> Live Spots Available
           </span>
           <span style={{
-            background: 'rgba(15, 23, 42, 0.85)',
+            background: 'var(--bg-glass)',
             backdropFilter: 'blur(8px)',
             color: '#fbbf24',
             padding: '4px 10px',

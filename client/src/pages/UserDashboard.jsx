@@ -72,7 +72,7 @@ export default function UserDashboard() {
   return (
     <div className="wrap" style={{ padding: '36px 0 60px' }}>
       {/* User Greeting & Stats Banner */}
-      <div className="card" style={{ marginBottom: '28px', background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.6) 100%)' }}>
+      <div className="card" style={{ marginBottom: '28px', background: 'linear-gradient(135deg, rgba(27, 42, 64, 0.96) 0%, rgba(43, 60, 84, 0.72) 100%)' }}>
         <div className="between" style={{ flexWrap: 'wrap', gap: '16px' }}>
           <div>
             <div className="row gap-sm" style={{ marginBottom: '6px' }}>
@@ -92,15 +92,15 @@ export default function UserDashboard() {
 
         {/* Quick KPI stats */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px', marginTop: '24px' }}>
-          <div style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '10px' }}>
+          <div style={{ background: 'var(--bg-control)', padding: '16px', borderRadius: '10px' }}>
             <span className="muted small">Active Passes</span>
             <strong style={{ fontSize: '26px', display: 'block', color: 'var(--accent-cyan)' }}>{activePasses.length}</strong>
           </div>
-          <div style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '10px' }}>
+          <div style={{ background: 'var(--bg-control)', padding: '16px', borderRadius: '10px' }}>
             <span className="muted small">Total Reservations</span>
             <strong style={{ fontSize: '26px', display: 'block', color: '#fff' }}>{list?.length ?? '–'}</strong>
           </div>
-          <div style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '10px' }}>
+          <div style={{ background: 'var(--bg-control)', padding: '16px', borderRadius: '10px' }}>
             <span className="muted small">Total Value Parked</span>
             <strong style={{ fontSize: '26px', display: 'block', color: 'var(--accent-emerald)' }}>{inr(totalSpent)}</strong>
           </div>
@@ -179,7 +179,7 @@ export default function UserDashboard() {
                     </div>
 
                     <div style={{
-                      background: 'rgba(255,255,255,0.02)',
+                      background: 'var(--bg-inset)',
                       padding: '12px',
                       borderRadius: '8px',
                       display: 'grid',
