@@ -10,8 +10,10 @@ app.use(helmet());
 app.use(cors({ origin: process.env.CLIENT_URL }));
 app.use(express.json());
 app.use('/api/auth', rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));
+app.use('/api/assistant', rateLimit({ windowMs: 15 * 60 * 1000, max: 30, standardHeaders: true, legacyHeaders: false }));
 
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/assistant', require('./routes/assistant'));
 app.use('/api/parking', require('./routes/parking'));
 app.use('/api/bookings', require('./routes/bookings'));
 app.use('/api/owner', require('./routes/owner'));
