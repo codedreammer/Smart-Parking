@@ -11,6 +11,7 @@ Smart parking marketplace and telemetry network. Interactive 2D parking bay sele
 - **Simulated Payment Gateway (UPI / Card / Fastag)**: Indian payment gateway modal (Google Pay, PhonePe, Paytm, BHIM, RuPay/Cards) with instant server confirmation.
 - **Digital QR Boarding Pass**: Scannable procedural QR code, barcode, gate PIN, vehicle tag, and active countdown timer.
 - **Customer Reviews & 5-Star Ratings**: Star ratings summary with verified driver reviews and interactive submission form.
+- **ParkPilot AI Parking Guide**: A Gemini-powered chat assistant that compares approved facilities in a selected area against the live booking-availability snapshot, vehicle type, price, rating, and requested amenities.
 - **1-Click Evaluator Demo Personas**: Instant login buttons in the navbar and auth page (`🚗 Driver`, `🏢 Owner`, `🛡️ Admin`) for frictionless testing.
 
 ### Backend & API
@@ -44,6 +45,15 @@ cd client
 npm install
 npm run dev        # http://localhost:5173
 ```
+
+### ParkPilot configuration
+
+Set the following in server/.env before starting the API. Keep the key on the server; never add it to a VITE_ variable or commit it.
+
+    GEMINI_API_KEY=your_google_ai_studio_key
+    GEMINI_MODEL=gemini-flash-latest
+
+The assistant is available from the floating **Find parking with AI** button. It always returns the platform matched parking cards alongside the Gemini explanation, and falls back to the same local recommendations if the model is unavailable.
 
 ### Pre-Configured Test Personas (Password: `Password@123`)
 - **Driver Persona**: `user@sp.in` (Book bays, test UPI payment, view QR tickets, simulate gate check-in/out)
