@@ -18,6 +18,9 @@ export const api = {
   savedVehicles: () => call('/auth/vehicles'),
   saveVehicle: (b) => call('/auth/vehicles', { method: 'POST', body: b }),
 
+  // AI parking guide
+  askParkingAssistant: (b) => call('/assistant', { method: 'POST', body: b }),
+
   // Parking
   search: (qs) => call(`/parking?${new URLSearchParams(qs)}`),
   parking: (id) => call(`/parking/${id}`),

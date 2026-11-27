@@ -8,6 +8,7 @@ import Auth from './pages/Auth';
 import UserDashboard from './pages/UserDashboard';
 import OwnerDashboard from './pages/OwnerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import ParkingAssistant from './components/ParkingAssistant';
 import { IconMapPin, IconShield, IconSparkles } from './components/Icons';
 
 export default function App() {
@@ -76,6 +77,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <ParkingAssistant />
     </>
   );
 }
